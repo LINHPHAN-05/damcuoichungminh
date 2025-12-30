@@ -44,14 +44,15 @@
       margin:auto;
     }
    /* CSS CHO NÚT PHÁT NHẠC (FIXED) */
-    .music-player {
+     .music-player {
       position: fixed;
       bottom: 20px;
       left: 20px;
       z-index: 1000;
       display: flex;
       align-items: center;
-      background: rgba(182, 140, 90, 0.9); /* Màu main-color có độ trong suốt */
+      background: rgba(182, 140, 90, 0.9); 
+      /* Màu main-color có độ trong suốt */
       padding: 5px 15px 5px 5px;
       border-radius: 50px;
       color: white;
@@ -503,6 +504,33 @@
     height:300px;
   }
 }
+/*sau ảnh cô dâu*/
+.quote-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 50px 20px;
+}
+
+.love-quote {
+  max-width: 900px;          /* chặn chữ không chạy dài */
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.9;
+  font-style: italic;
+  color: #666;
+  padding: 25px 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 600px) {
+  .love-quote {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+
 
   </style>
 </head>
@@ -520,7 +548,7 @@
     </nav>
   </div>
 </header>
-<audio id="myAudio" loop>
+ <audio id="myAudio" loop>
     <source src="audio2.mp3" type="audio/mpeg">
   </audio>
 
@@ -530,7 +558,7 @@
       <div class="pause-icon"></div>
     </div>
     <span id="musicStatus">Bật nhạc</span>
-  </div>
+  </div> 
 <section class="hero">
   <div class="container hero-content" data-aos="fade-up">
     <h1>Đám cưới chúng mình</h1>
@@ -542,8 +570,8 @@
 <section id="about" class="about">
   <div class="container about-grid">
     <div data-aos="fade-right">
-      <h2>Câu chuyện của bọn mình</h2>
-      <p> Gặp gỡ là một cái duyên và đi qua đời nhau cũng là một sự sắp đặt định mệnh, một món quà của cuộc sống. Đôi khi chỉ nghĩ lại thôi người ta cũng có lý do để mỉm cười.</p>
+      <h2>Câu chuyện của chúng mình</h2>
+      <p> Giữa 8 tỷ người trên thế giới, gặp được nhau rồi yêu nhau đã là một điều không dễ dàng. Xuất hiện trong cuộc đời của nhau đó đã là định mệnh. Gặp gỡ nhau là một cái duyên và đi qua đời nhau cũng là một sự sắp đặt định mệnh, một món quà của cuộc sống. Đôi khi chỉ nghĩ lại thôi người ta cũng đủ để làm lý do để mỉm cười.</p>
     </div>
     <img data-aos="fade-left" src="anh2.jpg" alt="about">
   </div>
@@ -556,7 +584,7 @@
       <!-- Chú rể -->
       <div class="service" data-aos="zoom-in">
         <h3>Chú rể Tiến Thành</h3>
-        <p>Cha: Phan Viết Tâm</p>
+        <p>Bố: Phan Viết Tâm</p>
         <p>Mẹ: Nguyễn Thị Thái</p>
         <p>Tân Lập, Tân Trịnh, Tuyên Quang</p>
         <img src="SEE05986.jpg" alt="Chú rể Tiến Thành">
@@ -565,26 +593,42 @@
       <!-- Cô dâu -->
       <div class="service" data-aos="zoom-in" data-aos-delay="150">
         <h3>Cô dâu Hoàng Oanh</h3>
-        <p>Cha: Phan Lịch</p>
+        <p>Bố: Phan Lịch</p>
         <p>Mẹ: Trần Thị Hồng Lành</p>
-        <p>Dương Sơn, Kim Trà, TP Huế</p>
-        <img src="SEE05941.jpg" alt="Cô dâu Hoàng Oanh">
+        <p>Dương Sơn, Kim Trà, Thành phố Huế</p>
+        <img src="SEE05666.jpg" alt="Cô dâu Hoàng Oanh">
       </div>
 
     </div>
   </div>
+  
+</div>
+<div class="quote-wrapper">
+  <p class="love-quote">
+    “Và định mệnh gặp gỡ có vĩnh cửu hay không là ở cách ta nuôi dưỡng và giữ gìn
+    tình yêu của riêng mình.<br><br>
+
+    Tình yêu là nguồn động viên mạnh mẽ, biến những ngày thường ngày thành những
+    khoảnh khắc đáng nhớ.<br><br>
+
+    Cuộc sống có thể ngắn ngủi, nhưng tình yêu có thể làm cho mỗi khoảnh khắc trở
+    nên vĩnh cửu.”
+  </p>
+</div>
+
+  
 </section>
 
 
 <section id="gallery">
   <div class="container">
-    <h2> Khoảnh khắc "yêu" </h2>
+    <h2> Wedding photos </h2>
     <div class="gallery-grid">
       <img src="SEE06570.jpg" data-aos="fade-up">
       <img src="SEE05799.jpg" data-aos="fade-up" data-aos-delay="100">
       <img src="SEE06319.jpg" data-aos="fade-up" data-aos-delay="200">
       <img src="SEE05859.jpg" data-aos="fade-up" data-aos-delay="300">
-      <img src="SEE06181.jpg" data-aos="fade-up" data-aos-delay="400">
+      <img src="SEE06146.jpg" data-aos="fade-up" data-aos-delay="400">
       <img src="SEE06014.jpg" data-aos="fade-up" data-aos-delay="500">
       <img src="SEE05921.jpg" data-aos="fade-up" data-aos-delay="600">
       <img src="SEE06606.jpg" data-aos="fade-up" data-aos-delay="700">    
@@ -596,13 +640,13 @@
   <section id="story" class="about">
   <div class="container about-grid">
     <div data-aos="fade-right">
-      <h2>Hành trình mới của chúng mình</h2>
+      <h2>Hành trình mới của chúng mình sắp bắt đầu</h2>
       <p>
         Và không thể thiếu sự chứng kiến của bạn, quý quan khách!  
         Hẹn gặp bạn vào Hôn lễ để cùng nhau tạo nên những kỷ niệm đẹp nhé!
       </p>
     </div>
-    <img data-aos="fade-left" src="SEE05959.jpg" alt="Hành trình tình yêu">
+    <img data-aos="fade-left" src="SEE06181.jpg" alt="Hành trình tình yêu">
   </div>
 </section>
 
@@ -613,7 +657,7 @@
     <div class="event-header" data-aos="fade-down">
       <h2>Thời Gian & Địa Điểm</h2>
       <p>
-        Trân trọng kính mời quý khách đến tham dự hôn lễ của chúng tôi 🤍
+         
       </p>
     </div>
 <div class="event-grid">
@@ -631,7 +675,7 @@
 
   <!-- LỄ GIA TIÊN - ĐỊA ĐIỂM -->
   <div class="event-card" data-aos="fade-up" data-aos-delay="100">
-    <h3>💖Lễ  vu quy </h3>
+    <h3>💖Tiệc cưới nhà gái </h3>
     <p>
       🕒11h30-03/1/2026 <br>
 (Ngày 15 tháng 11 năm Ất Tỵ)<br>
@@ -642,7 +686,7 @@
 
   <!-- TIỆC CƯỚI - THỜI GIAN -->
   <div class="event-card" data-aos="fade-up" data-aos-delay="200">
-    <h3>💍Lễ Thành Hôn </h3>
+    <h3>💍Tiệc cưới nhà trai </h3>
     <p>
       10h30-10/01/2026 <br>
 (Ngày 22 tháng 11 năm Ất Tỵ)<br>
@@ -756,6 +800,8 @@ function copyText(text){
   navigator.clipboard.writeText(text);
   alert("Đã copy: " + text);
 }
+//nhạc new
+
 // XỬ LÝ NHẠC
     const audio = document.getElementById("myAudio");
     const playBtn = document.getElementById("playBtn");
